@@ -47,6 +47,11 @@
             this.ciktiPBox = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.privateCheck = new System.Windows.Forms.CheckBox();
+            this.indexX = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.indexY = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.girdiPBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ciktiPBox)).BeginInit();
@@ -104,11 +109,16 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.indexY);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.indexX);
+            this.groupBox1.Controls.Add(this.privateCheck);
             this.groupBox1.Controls.Add(this.forceSt);
             this.groupBox1.Controls.Add(this.shiftCheck);
-            this.groupBox1.Location = new System.Drawing.Point(128, 265);
+            this.groupBox1.Location = new System.Drawing.Point(246, 265);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(572, 157);
+            this.groupBox1.Size = new System.Drawing.Size(397, 157);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Seçenekler";
@@ -200,11 +210,56 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(1314, 39);
+            this.label6.Location = new System.Drawing.Point(1308, 39);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(68, 16);
             this.label6.TabIndex = 17;
             this.label6.Text = "Çıktı resim";
+            // 
+            // privateCheck
+            // 
+            this.privateCheck.AutoSize = true;
+            this.privateCheck.Location = new System.Drawing.Point(7, 74);
+            this.privateCheck.Name = "privateCheck";
+            this.privateCheck.Size = new System.Drawing.Size(219, 20);
+            this.privateCheck.TabIndex = 2;
+            this.privateCheck.Text = "Şifreleme için private key kullan ";
+            this.privateCheck.UseVisualStyleBackColor = true;
+            this.privateCheck.CheckedChanged += new System.EventHandler(this.privateCheck_CheckedChanged);
+            // 
+            // indexX
+            // 
+            this.indexX.Location = new System.Drawing.Point(252, 72);
+            this.indexX.Name = "indexX";
+            this.indexX.ReadOnly = true;
+            this.indexX.Size = new System.Drawing.Size(45, 22);
+            this.indexX.TabIndex = 18;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(228, 74);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(18, 16);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "X:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(308, 74);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(19, 16);
+            this.label8.TabIndex = 21;
+            this.label8.Text = "Y:";
+            // 
+            // indexY
+            // 
+            this.indexY.Location = new System.Drawing.Point(332, 72);
+            this.indexY.Name = "indexY";
+            this.indexY.ReadOnly = true;
+            this.indexY.Size = new System.Drawing.Size(45, 22);
+            this.indexY.TabIndex = 20;
             // 
             // Sifrele
             // 
@@ -226,7 +281,7 @@
             this.Controls.Add(this.pBarCalis);
             this.Controls.Add(this.calistirBut);
             this.Name = "Sifrele";
-            this.Text = "Yazı şifreleme ekranı";
+            this.Text = "Şifrele";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.girdiPBox)).EndInit();
@@ -257,6 +312,11 @@
         private System.Windows.Forms.CheckBox forceSt;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.CheckBox privateCheck;
+        private System.Windows.Forms.TextBox indexX;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox indexY;
+        private System.Windows.Forms.Label label7;
     }
 }
 

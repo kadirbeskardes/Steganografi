@@ -22,18 +22,7 @@ namespace Steganografi
                 dlg.Filter = "Image Files(*.png) | *.png;";
                 if (dlg.ShowDialog() == DialogResult.OK)
                 {
-                    /* using (FileStream fs = new FileStream(dlg.FileName, FileMode.Open))
-                     {
-                         img = Image.FromStream(fs);
-                         fs.Close();
-                     }*/
-
                     bmp = new Bitmap(dlg.FileName);
-                    /*using (MemoryStream ms = new MemoryStream())
-                    {
-                        bmp.Save(ms, ImageFormat.Png);
-                        //pictureBox1.Image = bmp;
-                    }*/
                     textBox2.Text = dlg.FileName;
                 }
             }
@@ -42,15 +31,27 @@ namespace Steganografi
         {
             int indisX = 0, indisY = 0;
             bool tersX = false, tersY = false;
+            
             StringBuilder sb = new StringBuilder();
-            Color pixel = bmp.GetPixel(0, 0);
+            indisX = 0;
+            indisY = 0;
+            if (privateCheck.Checked)
+            {
+                indisX = Convert.ToInt32(indexX.Text);
+                indisY = Convert.ToInt32(indexY.Text);
+            }
+            Color pixel = bmp.GetPixel(indisX, indisY);
+
             byte shift = pixel.R;
             byte shiftX = pixel.G;
             byte shiftY = pixel.B;
-            indisX = shiftX; indisY = shiftY;
+            
+            indisX += shiftX; indisY += shiftY;
+
+            
+
             do
             {
-                //pixel = bmp.GetPixel(indisX, indisY);
                 uint m = 1;
                 uint h = 0;
                 int indis = 0;
@@ -79,17 +80,7 @@ namespace Steganografi
                     indis++;
                 }
                 sb.Append((char)(h - shift));
-                
-               // pixel = bmp.GetPixel(indisX, indisY);
-                /*
-                if (pixel.R == 255)
-                {
-                    sb.Append((char)(pixel.R + pixel.G - shift));
-                }
-                else
-                {
-                    sb.Append((char)(pixel.R - shift));
-                }*/
+
                 if (!tersX)
                 {
                     indisX = indisX + shiftX;
@@ -138,6 +129,12 @@ namespace Steganografi
         private void SifreCoz_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void privateCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            indexX.ReadOnly = !privateCheck.Checked;
+            indexY.ReadOnly = !privateCheck.Checked;
         }
     }
 }
