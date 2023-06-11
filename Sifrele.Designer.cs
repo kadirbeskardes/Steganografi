@@ -28,87 +28,102 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.calistirBut = new System.Windows.Forms.Button();
-            this.pBarCalis = new System.Windows.Forms.ProgressBar();
-            this.girdiDialog = new System.Windows.Forms.FolderBrowserDialog();
-            this.label1 = new System.Windows.Forms.Label();
-            this.metinTBox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.girdiPath = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.forceSt = new System.Windows.Forms.CheckBox();
-            this.shiftCheck = new System.Windows.Forms.CheckBox();
-            this.girdiBut = new System.Windows.Forms.Button();
             this.ciktiDialog = new System.Windows.Forms.FolderBrowserDialog();
-            this.girdiPBox = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.ciktiPath = new System.Windows.Forms.TextBox();
-            this.ciktiPBox = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.girdiDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.label6 = new System.Windows.Forms.Label();
-            this.privateCheck = new System.Windows.Forms.CheckBox();
-            this.indexX = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.ciktiPBox = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.girdiPBox = new System.Windows.Forms.PictureBox();
+            this.girdiBut = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
             this.indexY = new System.Windows.Forms.TextBox();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.girdiPBox)).BeginInit();
+            this.label7 = new System.Windows.Forms.Label();
+            this.indexX = new System.Windows.Forms.TextBox();
+            this.privateCheck = new System.Windows.Forms.CheckBox();
+            this.forceSt = new System.Windows.Forms.CheckBox();
+            this.shiftCheck = new System.Windows.Forms.CheckBox();
+            this.ciktiPath = new System.Windows.Forms.TextBox();
+            this.girdiPath = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.metinTBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pBarCalis = new System.Windows.Forms.ProgressBar();
+            this.calistirBut = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.ciktiPBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.girdiPBox)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // calistirBut
+            // label6
             // 
-            this.calistirBut.Location = new System.Drawing.Point(613, 458);
-            this.calistirBut.Name = "calistirBut";
-            this.calistirBut.Size = new System.Drawing.Size(91, 39);
-            this.calistirBut.TabIndex = 0;
-            this.calistirBut.Text = "İşle";
-            this.calistirBut.UseVisualStyleBackColor = true;
-            this.calistirBut.Click += new System.EventHandler(this.calistirBut_Click);
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(173, 307);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(54, 13);
+            this.label6.TabIndex = 47;
+            this.label6.Text = "Çıktı resim";
+            this.label6.Visible = false;
             // 
-            // pBarCalis
+            // label5
             // 
-            this.pBarCalis.Location = new System.Drawing.Point(180, 458);
-            this.pBarCalis.Name = "pBarCalis";
-            this.pBarCalis.Size = new System.Drawing.Size(322, 39);
-            this.pBarCalis.TabIndex = 1;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(168, 8);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(55, 13);
+            this.label5.TabIndex = 46;
+            this.label5.Text = "Girdi resim";
+            this.label5.Visible = false;
             // 
-            // label1
+            // ciktiPBox
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(182, 80);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 16);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "İşlenecek metin ifadesi:";
+            this.ciktiPBox.Location = new System.Drawing.Point(18, 331);
+            this.ciktiPBox.Name = "ciktiPBox";
+            this.ciktiPBox.Size = new System.Drawing.Size(363, 246);
+            this.ciktiPBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ciktiPBox.TabIndex = 45;
+            this.ciktiPBox.TabStop = false;
+            this.ciktiPBox.Visible = false;
             // 
-            // metinTBox
+            // label4
             // 
-            this.metinTBox.Location = new System.Drawing.Point(353, 73);
-            this.metinTBox.Multiline = true;
-            this.metinTBox.Name = "metinTBox";
-            this.metinTBox.Size = new System.Drawing.Size(351, 85);
-            this.metinTBox.TabIndex = 4;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(154, 517);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(364, 13);
+            this.label4.TabIndex = 44;
+            this.label4.Text = "Metin uzunluğuna ve imajın çözünürlüğüne bağlı olarak işlem uzun sürebilir...";
+            this.label4.Visible = false;
             // 
-            // label2
+            // girdiPBox
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 183);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(313, 16);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "String ifadenin işleneceği resim dosyasının konumu:";
+            this.girdiPBox.Location = new System.Drawing.Point(18, 42);
+            this.girdiPBox.Name = "girdiPBox";
+            this.girdiPBox.Size = new System.Drawing.Size(363, 246);
+            this.girdiPBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.girdiPBox.TabIndex = 43;
+            this.girdiPBox.TabStop = false;
+            this.girdiPBox.Visible = false;
             // 
-            // girdiPath
+            // girdiBut
             // 
-            this.girdiPath.Location = new System.Drawing.Point(353, 180);
-            this.girdiPath.Name = "girdiPath";
-            this.girdiPath.Size = new System.Drawing.Size(270, 22);
-            this.girdiPath.TabIndex = 7;
+            this.girdiBut.Location = new System.Drawing.Point(540, 152);
+            this.girdiBut.Name = "girdiBut";
+            this.girdiBut.Size = new System.Drawing.Size(75, 34);
+            this.girdiBut.TabIndex = 42;
+            this.girdiBut.Text = "Gözat";
+            this.girdiBut.UseVisualStyleBackColor = true;
+            this.girdiBut.Click += new System.EventHandler(this.girdiBut_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.indexY);
             this.groupBox1.Controls.Add(this.label7);
@@ -116,19 +131,63 @@
             this.groupBox1.Controls.Add(this.privateCheck);
             this.groupBox1.Controls.Add(this.forceSt);
             this.groupBox1.Controls.Add(this.shiftCheck);
-            this.groupBox1.Location = new System.Drawing.Point(246, 265);
+            this.groupBox1.Location = new System.Drawing.Point(157, 269);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(397, 157);
-            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabIndex = 41;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Seçenekler";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(308, 74);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(17, 13);
+            this.label8.TabIndex = 21;
+            this.label8.Text = "Y:";
+            // 
+            // indexY
+            // 
+            this.indexY.Location = new System.Drawing.Point(332, 72);
+            this.indexY.Name = "indexY";
+            this.indexY.ReadOnly = true;
+            this.indexY.Size = new System.Drawing.Size(45, 20);
+            this.indexY.TabIndex = 20;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(228, 74);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(17, 13);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "X:";
+            // 
+            // indexX
+            // 
+            this.indexX.Location = new System.Drawing.Point(252, 72);
+            this.indexX.Name = "indexX";
+            this.indexX.ReadOnly = true;
+            this.indexX.Size = new System.Drawing.Size(45, 20);
+            this.indexX.TabIndex = 18;
+            // 
+            // privateCheck
+            // 
+            this.privateCheck.AutoSize = true;
+            this.privateCheck.Location = new System.Drawing.Point(7, 74);
+            this.privateCheck.Name = "privateCheck";
+            this.privateCheck.Size = new System.Drawing.Size(177, 17);
+            this.privateCheck.TabIndex = 2;
+            this.privateCheck.Text = "Şifreleme için private key kullan ";
+            this.privateCheck.UseVisualStyleBackColor = true;
             // 
             // forceSt
             // 
             this.forceSt.AutoSize = true;
             this.forceSt.Location = new System.Drawing.Point(7, 48);
             this.forceSt.Name = "forceSt";
-            this.forceSt.Size = new System.Drawing.Size(227, 20);
+            this.forceSt.Size = new System.Drawing.Size(183, 17);
             this.forceSt.TabIndex = 1;
             this.forceSt.Text = "Metin boyutu fazla ise zorla şifrele";
             this.forceSt.UseVisualStyleBackColor = true;
@@ -138,185 +197,160 @@
             this.shiftCheck.AutoSize = true;
             this.shiftCheck.Location = new System.Drawing.Point(7, 22);
             this.shiftCheck.Name = "shiftCheck";
-            this.shiftCheck.Size = new System.Drawing.Size(254, 20);
+            this.shiftCheck.Size = new System.Drawing.Size(202, 17);
             this.shiftCheck.TabIndex = 0;
             this.shiftCheck.Text = "İşlemden önce metni şifrele (Sezar ile)";
             this.shiftCheck.UseVisualStyleBackColor = true;
             // 
-            // girdiBut
+            // ciktiPath
             // 
-            this.girdiBut.Location = new System.Drawing.Point(629, 180);
-            this.girdiBut.Name = "girdiBut";
-            this.girdiBut.Size = new System.Drawing.Size(75, 22);
-            this.girdiBut.TabIndex = 10;
-            this.girdiBut.Text = "Gözat";
-            this.girdiBut.UseVisualStyleBackColor = true;
-            this.girdiBut.Click += new System.EventHandler(this.button1_Click);
+            this.ciktiPath.Location = new System.Drawing.Point(264, 202);
+            this.ciktiPath.Name = "ciktiPath";
+            this.ciktiPath.ReadOnly = true;
+            this.ciktiPath.Size = new System.Drawing.Size(270, 20);
+            this.ciktiPath.TabIndex = 40;
             // 
-            // girdiPBox
+            // girdiPath
             // 
-            this.girdiPBox.Location = new System.Drawing.Point(735, 73);
-            this.girdiPBox.Name = "girdiPBox";
-            this.girdiPBox.Size = new System.Drawing.Size(363, 246);
-            this.girdiPBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.girdiPBox.TabIndex = 12;
-            this.girdiPBox.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(319, 543);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(452, 16);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "Metin uzunluğuna ve imajın çözünürlüğüne bağlı olarak işlem uzun sürebilir...";
-            this.label4.Visible = false;
+            this.girdiPath.Location = new System.Drawing.Point(264, 158);
+            this.girdiPath.Name = "girdiPath";
+            this.girdiPath.Size = new System.Drawing.Size(270, 20);
+            this.girdiPath.TabIndex = 39;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(243, 223);
+            this.label3.Location = new System.Drawing.Point(187, 205);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 16);
-            this.label3.TabIndex = 6;
+            this.label3.Size = new System.Drawing.Size(71, 13);
+            this.label3.TabIndex = 38;
             this.label3.Text = "Çıktı konumu:";
             // 
-            // ciktiPath
+            // label2
             // 
-            this.ciktiPath.Location = new System.Drawing.Point(353, 220);
-            this.ciktiPath.Name = "ciktiPath";
-            this.ciktiPath.ReadOnly = true;
-            this.ciktiPath.Size = new System.Drawing.Size(270, 22);
-            this.ciktiPath.TabIndex = 8;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(11, 161);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(247, 13);
+            this.label2.TabIndex = 37;
+            this.label2.Text = "String ifadenin işleneceği resim dosyasının konumu:";
             // 
-            // ciktiPBox
+            // metinTBox
             // 
-            this.ciktiPBox.Location = new System.Drawing.Point(1153, 73);
-            this.ciktiPBox.Name = "ciktiPBox";
-            this.ciktiPBox.Size = new System.Drawing.Size(363, 246);
-            this.ciktiPBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ciktiPBox.TabIndex = 15;
-            this.ciktiPBox.TabStop = false;
+            this.metinTBox.Location = new System.Drawing.Point(264, 45);
+            this.metinTBox.Multiline = true;
+            this.metinTBox.Name = "metinTBox";
+            this.metinTBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.metinTBox.Size = new System.Drawing.Size(351, 85);
+            this.metinTBox.TabIndex = 36;
             // 
-            // label5
+            // label1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(885, 39);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 16);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "Girdi resim";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(141, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(117, 13);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "İşlenecek metin ifadesi:";
             // 
-            // label6
+            // pBarCalis
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(1308, 39);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 16);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "Çıktı resim";
+            this.pBarCalis.Location = new System.Drawing.Point(157, 459);
+            this.pBarCalis.Name = "pBarCalis";
+            this.pBarCalis.Size = new System.Drawing.Size(279, 33);
+            this.pBarCalis.TabIndex = 34;
             // 
-            // privateCheck
+            // calistirBut
             // 
-            this.privateCheck.AutoSize = true;
-            this.privateCheck.Location = new System.Drawing.Point(7, 74);
-            this.privateCheck.Name = "privateCheck";
-            this.privateCheck.Size = new System.Drawing.Size(219, 20);
-            this.privateCheck.TabIndex = 2;
-            this.privateCheck.Text = "Şifreleme için private key kullan ";
-            this.privateCheck.UseVisualStyleBackColor = true;
-            this.privateCheck.CheckedChanged += new System.EventHandler(this.privateCheck_CheckedChanged);
+            this.calistirBut.Location = new System.Drawing.Point(463, 459);
+            this.calistirBut.Name = "calistirBut";
+            this.calistirBut.Size = new System.Drawing.Size(91, 33);
+            this.calistirBut.TabIndex = 33;
+            this.calistirBut.Text = "İşle";
+            this.calistirBut.UseVisualStyleBackColor = true;
+            this.calistirBut.Click += new System.EventHandler(this.calistirBut_Click_1);
             // 
-            // indexX
+            // panel1
             // 
-            this.indexX.Location = new System.Drawing.Point(252, 72);
-            this.indexX.Name = "indexX";
-            this.indexX.ReadOnly = true;
-            this.indexX.Size = new System.Drawing.Size(45, 22);
-            this.indexX.TabIndex = 18;
+            this.panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.calistirBut);
+            this.panel1.Controls.Add(this.pBarCalis);
+            this.panel1.Controls.Add(this.metinTBox);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.girdiBut);
+            this.panel1.Controls.Add(this.girdiPath);
+            this.panel1.Controls.Add(this.groupBox1);
+            this.panel1.Controls.Add(this.ciktiPath);
+            this.panel1.Location = new System.Drawing.Point(42, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(653, 594);
+            this.panel1.TabIndex = 48;
             // 
-            // label7
+            // panel2
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(228, 74);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(18, 16);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "X:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(308, 74);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(19, 16);
-            this.label8.TabIndex = 21;
-            this.label8.Text = "Y:";
-            // 
-            // indexY
-            // 
-            this.indexY.Location = new System.Drawing.Point(332, 72);
-            this.indexY.Name = "indexY";
-            this.indexY.ReadOnly = true;
-            this.indexY.Size = new System.Drawing.Size(45, 22);
-            this.indexY.TabIndex = 20;
+            this.panel2.BackColor = System.Drawing.Color.Azure;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.girdiPBox);
+            this.panel2.Controls.Add(this.ciktiPBox);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Location = new System.Drawing.Point(728, 12);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(398, 594);
+            this.panel2.TabIndex = 22;
+            this.panel2.Visible = false;
             // 
             // Sifrele
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1549, 579);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.ciktiPBox);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.girdiPBox);
-            this.Controls.Add(this.girdiBut);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.ciktiPath);
-            this.Controls.Add(this.girdiPath);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.metinTBox);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pBarCalis);
-            this.Controls.Add(this.calistirBut);
+            this.ClientSize = new System.Drawing.Size(1189, 686);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Name = "Sifrele";
             this.Text = "Şifrele";
+            ((System.ComponentModel.ISupportInitialize)(this.ciktiPBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.girdiPBox)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.girdiPBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ciktiPBox)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button calistirBut;
-        private System.Windows.Forms.ProgressBar pBarCalis;
-        private System.Windows.Forms.FolderBrowserDialog girdiDialog;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox metinTBox;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox girdiPath;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button girdiBut;
         private System.Windows.Forms.FolderBrowserDialog ciktiDialog;
-        private System.Windows.Forms.PictureBox girdiPBox;
-        private System.Windows.Forms.CheckBox shiftCheck;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox ciktiPath;
-        private System.Windows.Forms.PictureBox ciktiPBox;
-        private System.Windows.Forms.CheckBox forceSt;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.FolderBrowserDialog girdiDialog;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.CheckBox privateCheck;
-        private System.Windows.Forms.TextBox indexX;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox ciktiPBox;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox girdiPBox;
+        private System.Windows.Forms.Button girdiBut;
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox indexY;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox indexX;
+        private System.Windows.Forms.CheckBox privateCheck;
+        private System.Windows.Forms.CheckBox forceSt;
+        private System.Windows.Forms.CheckBox shiftCheck;
+        private System.Windows.Forms.TextBox ciktiPath;
+        private System.Windows.Forms.TextBox girdiPath;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox metinTBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ProgressBar pBarCalis;
+        private System.Windows.Forms.Button calistirBut;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 
