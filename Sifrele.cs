@@ -22,7 +22,7 @@ namespace Steganografi
                 using (OpenFileDialog dlg = new OpenFileDialog())
                 {
                     dlg.Title = "Resim seç";
-                    dlg.Filter = "Image Files(*.PNG)|*.PNG;|All files (*.*)|*.*";
+                    dlg.Filter = "Image Files(*.PNG)|*.PNG;";
                     if (dlg.ShowDialog() == DialogResult.OK)
                     {
                         bmp = new Bitmap(dlg.FileName);//Seçilen PNG dosyası Bitmap nesnesine getirildi.
@@ -277,10 +277,9 @@ namespace Steganografi
                         indisY = indisY + shiftY;
                         indisX = indisX + shiftX;
                     }
-
                 }
 
-                bmp.SetPixel(indisX, indisY, Color.FromArgb(0, 0, 0));// Son pixel'i (0,0,0) yap
+                bmp.SetPixel(indisX, indisY, Color.FromArgb(0, 0, 0)); //Son pixel'i (0,0,0) yap
 
                 pBarCalis.Value = 90;
                 SaveFileDialog saveFile = new SaveFileDialog();
@@ -295,6 +294,7 @@ namespace Steganografi
                     label6.Visible = true;
                     ciktiPBox.Visible = true;
                 }
+
                 #region Disable & Clear
                 bmp.Dispose();// Bitmap kaynağını serbest bırakıyoruz
 

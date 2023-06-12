@@ -89,8 +89,8 @@ namespace Steganografi
 
                 do
                 {
-                    uint m = 1;
-                    uint h = 0;
+                    uint m = 1;//Maske tutucumuz
+                    uint h = 0;//Char için kullanacağımız byte değeri
                     uint r, g, b;
                     for (int j = 0; j < 3; j++)
                     {
@@ -98,26 +98,29 @@ namespace Steganografi
                         {
                             pixel = bmp.GetPixel(j + indisX, k + indisY);
                             r = (uint)pixel.R;
-                            if ((r & 1) != 0)
+                            if ((r & 1) != 0)// R değerinin LSB'si 1 ise
                             {
-                                h = (uint)(h | m);
+                                h = (uint)(h | m);//M maskesini kullanarak h değerini değiştir.
                             }
                             m <<= 1;
                             g = (uint)pixel.G;
-                            if ((g & 1) != 0)
+                            if ((g & 1) != 0)//G değerinin LSB'si 1 ise
                             {
-                                h = (uint)(h | m);
+                                h = (uint)(h | m);//M maskesini kullanarak h değerini değiştir.
                             }
                             m <<= 1;
                             b = (uint)pixel.B;
-                            if ((b & 1) != 0)
+                            if ((b & 1) != 0)//B değerinin LSB'si 1 ise
                             {
-                                h = (uint)(h | m);
+                                h = (uint)(h | m);//M maskesini kullanarak h değerini değiştir.
                             }
-                            m <<= 1;
+                            m <<= 1;//Mask'i sola shift ediyoruz. 1 değeri sürekli sola doğru kayıyor.
+                                    //Bu sayede h değerinde değişiklik yapılcak bit sürekli değişiyor.
                         }
 
                     }
+                    //Oluşturduğumuz h değerinden sezar ötleem değerini çıkarıyoruz.
+                    //String tutucumuza elde ettiğimiz byte değerinee eşdeğer gelen char'ı ekliyoruz
                     sb.Append((char)(h - shift));
 
                     if (!tersX)
